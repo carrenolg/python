@@ -9,6 +9,8 @@ COPY app.py ./
 COPY .env ./
 COPY database* database/
 COPY resources* resources/
+COPY services* services/
+COPY templates* templates/ 
 ENV ENV_FILE_LOCATION=./.env
 
 CMD [ "python", "./app.py" ]

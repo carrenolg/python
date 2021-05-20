@@ -15,9 +15,10 @@ bcrypt = Bcrypt(app)
 jwt = JWTManager(app)
 
 # connect(host="mongodb://my_user:my_password@hostname:port/my_db?authSource=admin")
-app.config['MONGODB_SETTINGS'] = {
-    'host': 'mongodb://root:1q2w3e4r@localhost:27017/movie-bag?authSource=admin'
-}
+# app.config['MONGODB_SETTINGS'] = {
+#    'host': 'mongodb://root:1q2w3e4r@localhost:27017/movie-bag?authSource=admin'
+# }
+
 app.config.from_envvar('ENV_FILE_LOCATION')
 
 
