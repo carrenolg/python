@@ -1,4 +1,3 @@
-from resources.routes import initialize_routes
 from flask import Flask
 from flask_restful import Api
 from flask_bcrypt import Bcrypt
